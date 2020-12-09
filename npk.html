@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SOIL CLASSIFIER FOR PLANTATION</title>
+        <style>
+            body{
+                width:100%;
+                height:100%;
+                margin:0;
+            }
+            a{
+                text-decoration:none;
+                background-color:#00FF00;
+                color:#00FF00;
+            }
+            .container{
+                width:90%;
+                margin:auto;
+                overflow:hidden;
+            }
+            .items{
+                width:30%;
+                display: block;
+                padding: 4px;
+                margin-bottom: 20px;
+                line-height: 1.42857143;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                float:left; margin-left:1%;
+            }
+            .thumbnail{
+                display: block;
+                max-width: 100%;
+                height: auto;
+               
+            }
+            .caption{
+                color:#000;
+                padding:0px 10px 10px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .soil{
+                width:200px;
+                position:absolute;
+                bottom:-1px;
+                
+               
+                
+                left:73%;
+            }
+            .tree{
+                position:absolute;
+                bottom:70px;
+                width:6px;
+                height:100px;
+                background-color:#5f8011;
+                transform-origin:bottom;
+            }
+            .tree--1{
+                left:80%;
+                animation:treeGrows 4s linear, treeFadesOut 8s;
+            }
+            .tree__leaf{
+                position:absolute;
+                width:30px;
+                height:30px;
+                background-color:#5f8011;
+                border:0;
+                border-top-right-radius:100%;
+                border-bottom-left-radius:100%;
+            }
+            .tree__leaf--top-left{
+                top:-19px;
+                left:-17px;
+                width:20px;
+                height:20px;
+            }
+            .tree__leaf--top-right{
+                top:-19px;
+                right:-17px;
+                width:20px;
+                height:20px;
+                transform:rotate(90deg);
+            }
+            .tree__leaf--left{
+                top:20px;
+                left:-30px;
+            }
+            .tree__leaf--right{
+                top:40px;
+                right:-30px;
+                transform:rotate(90deg);
+            }
+            @keyframes treeGrows{
+                0%{
+                    transform:scale(1);
+                }
+                15%{
+                    transform:scale(1.5);
+                }
+                25%{
+                    transform:scale(1.5);
+                }
+                40%{
+                    transform:scale(2);
+                }
+                50%{
+                    transform:scale(2);
+                }
+                65%{
+                    transform:scale(2.5);
+                }
+                75%{
+                    transform:scale(2.5);
+                }
+                90%{
+                    transform:scale(3);
+                }
+                100%{
+                    transform:scale(3);
+                }
+            }
+            @keyframes treeFadesOut{
+                0%{
+                    opacity:1;
+                }
+                5%{
+                    opacity:1;
+                }
+                45%{
+                    opacity:1;
+                }
+                50%{
+                    opacity:0;
+                }
+                100%{
+                    opacity:1;
+                }
+            }
+        </style>
+  </head>
+  <body>
+      <div class="field">
+          
+          <div class="tree tree--1">
+               <span class="tree__leaf tree__leaf--top-left"></span>
+               <span class="tree__leaf tree__leaf--top-right"></span>
+               <span class="tree__leaf tree__leaf--left "></span>
+               <span class="tree__leaf tree__leaf--right"></span>
+               
+               
+           </div>
+          
+           
+           <img src="image/soil1.png" class="soil">
+           
+           
+      </div>
+      <h1>SOIL CLASSIFIER FOR PLANTATION</h1>
+      <h2>Abstract</h2>
+      <p>Continuous cropping without the adequate measurement and provisioning of the soil nutrient may endanger the sustainability of the agriculture.<br> Soil nutrient measurement is greatly required for proper plant growth and effective fertilization .<br> A key in soil testing for formulated fertilization is to determine the amount of soil nutrient ,<br>followed by recommendation of the nutrient needs and site-specific fertilization .<br> An optical transducer is developed to measure and to detect the presence of Nitrogen (N), Phosphorus (P) and Potassium (K) of soil.<br> Such transducer is needed to decide how much extra contents of these nutrients are to be added to the soil to increase soil fertility.<br> This can improve the quality of soil and reduces the undesired use of fertilizers to be added to the soil.<br> The N, P, and K value of the sample are determined by absorption light of each nutrient. </p>
+      <h3>Introduction</h3>
+      <p>Finding plants suitable for Soil ,by detecting nutrients .or improve Plant growth by knowing nutrients in the Soil.<br>The system overview is To help Determine which soil is suitable for  Which crop ,which can intern help to  Improve soil fertility and crop production.<br>
+          By Using sensors Determine the nutrients in the Soil Like nitrogen phosphorus potassium and other nutrients.<br>The sensor is connected with the laptop Or any computer application Display the nutrients .<br> Identify the nutrients in the Soil Is larger or less.display which plant is suitable for tested soil.<br>
+       
+          Farming, Agriculture studies, improving soil fertility for crop production,are the major applications</p>
+      <h3>Components Required</h3>
+      <div class="container">
+          <div class="items">
+              <a href="#">
+                  <img src="image/arduino uno.png" alt="arduino" class="thumbnail">
+                  <div class="caption">
+                      <h3>Arduino UNO Board</h3>
+                      <p>It is connected to the color sensor . NPK value measured by the color sensor is stored in Arduino .<br> 
+                          Arduino is connected to the software system and display the values of NPK in the screen.<br> 
+                          The details of plant is stored in Arduino . Also the software system display which plant is better for the soil.
+</p>
+                  </div>
+              </a>
+          </div>
+          <div class="items">
+              <a href="#">
+                  <img src="image/Tcs230 color sensor.png" alt="color sensor" class="thumbnail">
+                  <div class="caption">
+                      <h3>TCS230 Color Sensor</h3>
+                      <p>The color sensor is used to measure and to detect the presence of NPK content of soil.<br>
+                          It consists of two part
+                      </p>
+                      <div id="left">
+                          <h4>Photo diode</h4>
+                          <ul>
+                              <li>The main part of the module is the Tcs3200 chip, which consists of an 8x8 array of photo diode .</li>
+                                  <li>The diode absorbs the reflected light from soil sample and then converts it into current</li>
+                          </ul>
+                          <h4>LED</h4>
+                          <ul>
+                              <li>It act as a light source in the system .<br>
+                                  The four LEDs attached to the color sensor emits the light which is absorbed by the soil sample and<br>
+                                  the rest of the light is reflected back to the sensor that is detected by <br>
+                                  a photodiode and convert into current.
+</li>
+                          </ul>
+                      </div>
+                          
+
+                  </div>
+              </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="items">
+              <a href="#">
+                  <img src="image/LDR sensor.png" alt="LDR sensor" class="thumbnail">
+                  <div class="caption">
+                      <h3>LDR Sensor</h3>
+                      <p>Light sensor(LDR sensor ) is connected with Arduino UNO board . It provide light to detect NPK value</p>
+                  </div>
+              </a>
+          </div>
+          <div class="items">
+              <a href="#">
+                  <img src="image/npk test kit.png" alt="test kit" class="thumbnail">
+                  <div class="caption">
+                      <h3>NPK Test Kit</h3>
+                      <p>This soil test kit is designed for simplicity of use and accurate result . <br>
+                          For making soil sample the capsule is add to the soil.
+</p>
+                  </div>
+              </a>
+          </div>
+      </div>
+      <h2>Diagram</h2>
+      <a href="#">
+          <img src="image/diagram.png" alt="diagram">
+          
+              <h3>Working</h3>
+          
+              <p>The color sensor works by illuminating soil sample with white light and measuring <br>
+                  the intensity of reflected light with the help of TCS3200 chip present in sensor . <br>
+                  As we take soil sample from soil divide the sample into three part .<br>
+                  Make a solution using NPK color detection capsule .<br>
+                  Place the sample into the light sensor . In addition to this the pH value of soil<br>
+                  determined by adding capsule to the soil solution to determine whether the soil is acidic or basic .<br>
+                  The color sensor is based on the principle of absorption of color by solution .<br>
+                  The light transmission system that is four LED of color sensor utilizes three different color's wavelength that is red , green and blue<br>
+                  which is related to nitrogen, potassium and phosphorus value .<br>
+                  The difference between standard absorption wavelength and the sample absorption wavelength of particular color gives the amount of presence of nutrients . <br>
+                  It helps in determining the nutrient amount as high, medium, low or none . <br>
+                  It also predict which plant is suitable for the tested soil .And also identity which plant is highly grow in that soil
+</p>
+          
+               
+          
+      </a>
+      <h3>Conclusion</h3>
+      <p>By following the priciple of colorimetry we can detect the level of nutrients in the soil.<br>
+          By analysing the nutrients level the system find which plant is better to grow on that soil.<br>
+          Also predict plant we are planing to plant on the soil is better or not</p>
+  </body>
+</html>

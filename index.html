@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SOIL CLASSIFIER FOR PLANTATION</title>
+        <style>
+            body{
+                background:#111;
+                width:100%;
+                height:100%;
+                margin:0;
+            }
+            a{
+                text-decoration:none;
+                background-color:transparent;
+                color:#ededed;
+            }
+            .inner header{
+                width:80%;
+                margin:auto;
+            }
+            .slider{
+                position:relative;
+                width:100%;
+                min-height:100vh;
+                display:flex;
+                justify-content:center;
+                align-items:flex-end;
+                background:#000;
+            }
+            .slider .imgBx{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                padding:100px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                transition:0.5s;
+                z-index:1;
+                clip-path:circle(0px at center);
+            }
+            .slider input[type="radio"]:checked + .imgBx{
+                z-index:10;
+                clip-path:circle(1000px at center);
+            }
+            .slider .imgBx img{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                object-fit:cover;
+            }
+            .slider .imgBx .content{
+                position:relative;
+                text-align:center;
+                max-width:800px;
+            }
+            .slider .imgBx .content h2{
+                font-size:4em;
+                line-height:1em;
+                color:#fff;
+            }
+            .slider .imgBx .content p{
+                font-size:1.1em;
+                color:#fff;
+            }
+            .slider .imgBx .content a{
+                position:relative;
+                display:inline-block;
+                background:#fff;
+                padding:10px 30px;
+                color:#111;
+                font-weight:500;
+                margin-top:20px;
+                text-decoration:none;
+            }
+            .slider input[type="radio"]{
+                position:relative;
+                z-index:1000;
+                margin:5px;
+                margin-bottom:40px;
+                outline:none;
+                cursor:pointer;
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </style>
+   </head>
+   <body>
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+           <div class="container">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       
+                   </button>
+                   <a href="#" class="navbar-brand">Soil Classifier for Plantation</a>
+                   
+               </div>
+               <div class="collapse navbar-collapse" id="mynavbar">
+                   <ul class="nav navbar-nav navbar-right">
+                       <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+                       <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Reference</a></li>
+                       <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Contact</a></li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+       <div class="slider">
+            <input type="radio" name="slider" checked="checked">
+            <div class="imgBx">
+                <img src="image/forest.png">
+                <div class="content">
+                    <h2>Welcome to Soil Classifier For Plantation</h2>
+                    <P>This site will help you to find plants suitable for soil,<br>by detecting nutrients or improve plant<br> growth by knowing nutrients in the soil.<br>And also which soil is suitable for which plant.
+                    </P>
+                    <a href="npk.html">Read  More</a>
+                </div>
+            </div>
+            <input type="radio" name="slider">
+            <div class="imgBx">
+                <img src="image/crop.png">
+                <div class="content">
+                    
+                    <h2>Types of Soil and suitable Crops</h2>
+                    <a href="type.html">Read  More</a>
+                </div>
+            </div>
+                <input type="radio" name="slider">
+            <div class="imgBx">
+                <img src="image/vegetable garden.png">
+                <div class="content">
+                    <h2>Soil Nutrients for Vegetable Garden</h2>
+                    <a href="vegetable.html">Read  More</a>
+                </div>
+            </div>
+                <input type="radio" name="slider">
+            <div class="imgBx">
+                <img src="image/gardening.png">
+                <div class="content">
+                    <h2>Soil for Flower Gardening</h2>
+                    <a href="flower.html">Read  More</a>
+                </div>
+            </div>
+        </div>
+              
+   </body>
+</html>
